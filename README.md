@@ -29,4 +29,9 @@ inside the following filepath
 "C:\Users\{YOURUSERHERE}\AppData\Local\Arduino15\packages\esp8266\hardware\esp8266\{VERSIONNUMBER}\libraries\esp8266-waveshare-epd"
 ```
 ### Update Wifi Credentials
-In ESP8266_msg.ino, add your wifi SSID and password and then upload. 
+In ESP8266_msg.ino, add your wifi SSID and password and then upload.
+
+Also make sure the board is “NodeMCU 1.0 (ESP-12E Module)”
+
+You might need to install “ESPWiFi.h” and “ESP8266HTTPClient.h” as well, but you can do that from the library manager I believe.
+
