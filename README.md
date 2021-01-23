@@ -9,3 +9,9 @@ This project was born out of the increase in technology, yet decrease in human i
 While this project was mainly for personal use, I figured maybe some of the code could be of some use.
 
 ### Download
+Download repository using method of choice. Place everything into a folder called 
+```
+function test() {
+  console.log("notice the blank line before this function?");
+}
+```
