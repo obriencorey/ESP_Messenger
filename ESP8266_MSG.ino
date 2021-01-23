@@ -54,8 +54,8 @@ int newstr;
 int i;
 
 
-const char* ssid = "MySpectrumWiFibc-5g";                     //network name  
-const char* password = "largebunny933";                       //network password
+const char* ssid = "Hub on Campus State";                     //network name  
+const char* password = "password";                       //network password
 
 char currentString[BUFFERLENGTH] = {0};                //the reason for all 0s is explained below
 
@@ -72,7 +72,7 @@ void setup () {
   digitalWrite(LED, LOW);                       //and intialize to low
  
   Serial.begin(115200);                         
-  WiFi.begin(ssid, password);                   //start wifi connection with provided info
+  WiFi.begin(ssid);                   //start wifi connection with provided info
  
   while (WiFi.status() != WL_CONNECTED) {       //while not connected
     delay(1000);
@@ -90,7 +90,7 @@ void loop() {
    
     HTTPClient http;                                            //declare an object of class HTTPClient
     
-    http.begin("http://message.cjobrien.com/aWUvnSSJYA9rRCI9E1jl.txt");   //where to get the data
+    http.begin("http://message.cjobrien.com/datastorage.txt");   //where to get the data
     int httpCode = http.GET();                                            //send the get request
  
     if (httpCode > 0) { //if the request is successful
